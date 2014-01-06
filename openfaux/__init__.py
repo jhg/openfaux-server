@@ -1,0 +1,1 @@
+from openfaux import server

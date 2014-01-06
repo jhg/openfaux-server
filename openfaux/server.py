@@ -32,23 +32,4 @@ class Proxy(proxy.Proxy):
 
 class ProxyFactory(http.HTTPFactory):
     protocol = Proxy
-portstr = "tcp:8080:interface=localhost" # serve on localhost:8080
-
-if __name__ == '__main__': 
-    import sys
-    from twisted.internet import endpoints, reactor
-
-    def shutdown(reason, reactor, stopping=[]):
-        """Stop the reactor."""
-        if stopping: return
-        stopping.append(True)
-        if reason:
-            log.msg(reason.value)
-        reactor.callWhenRunning(reactor.stop)
-
-    log.startLogging(sys.stdout)
-    endpoint = endpoints.serverFromString(reactor, portstr)
-    d = endpoint.listen(ProxyFactory())
-    d.addErrback(shutdown, reactor)
-    reactor.run()
 
