@@ -3,8 +3,10 @@ from twisted.web import http, proxy
 
 __author__ = "Yashin Mehaboobe (@sp3ctr3)"
 
+
 class ProxyClient(proxy.ProxyClient):
-    """Modify response as well as header here.
+    """
+    Modify response as well as header here.
     """
     def handleHeader(self, key, value):
         """
@@ -15,21 +17,25 @@ class ProxyClient(proxy.ProxyClient):
 
     def handleResponsePart(self, buffer):
         """
-        Modify buffer to modify response. For example replacing buffer with buffer[::-1] will lead to a reversed output.
-        This might cause content encoding errors. Currently test only on text only websites
+        Modify buffer to modify response. For example replacing buffer with
+        buffer[::-1] will lead to a reversed output. This might cause content
+        encoding errors. Currently test only on text only websites
         """
         log.msg("Content: %s" % (buffer,))
         proxy.ProxyClient.handleResponsePart(self, buffer)
 
+
 class ProxyClientFactory(proxy.ProxyClientFactory):
     protocol = ProxyClient
+
 
 class ProxyRequest(proxy.ProxyRequest):
     protocols = dict(http=ProxyClientFactory)
 
+
 class Proxy(proxy.Proxy):
     requestFactory = ProxyRequest
 
+
 class ProxyFactory(http.HTTPFactory):
     protocol = Proxy
-
