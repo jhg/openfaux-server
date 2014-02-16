@@ -1,10 +1,10 @@
-![OpenFaux](https://raw.github.com/openfaux/openfaux-website/master/HTML/IMG/openfaux-horizontal-2500px.png)
-### Browser plug-in for encrypting and masking internet traffic.
-Our mission as a nonprofit foundation is to advance the security of the internet and privacy for all online users. To begin fulfulling our mission, we've began working on OpenFaux. OpenFaux is an open source browser plug-in for encrypting and masking internet traffic.
+![OpenFaux](https://raw2.github.com/openfaux/openfaux-website/master/HTML/IMG/openfaux-horizontal-600px.png)
+### Browser add-on for encrypting and masking internet traffic.
+Our mission is to advance the security of the internet and privacy for all online users. To begin fulfulling our mission, we've began working on OpenFaux. OpenFaux is an open source browser add-on for encrypting and masking internet traffic.
 
 For more information, please see https://www.openfaux.org
 
-> _Warning: OpenFaux is experimental, early-stage software. There may be flaws._
+**Warning:** OpenFaux is experimental, early-stage software. There may be flaws.
 
 ## Problem
 
@@ -21,6 +21,41 @@ One of the most prevalent issues today is protecting our internet activity from 
 * **Hide IP** - By routing your data through servers of your choice, your IP Address is masked.
 * **Simplicity** - No manual configuration. UI has been simplified to one-click.
 * **Free** - Free software allows for accessibility and aligns with our mission.
+
+## Flowchart
+![OpenFaux](https://raw.github.com/openfaux/openfaux-website/master/HTML/IMG/OpenFaux.png)
+
+## Software Stack
+
+* **Server-Side**
+ * Python
+* **Client-Side**
+ * HTML
+  * CSS
+  * JavaScript
+   * AJAX
+   * jQuery
+* **Website**
+ * HTML
+ * CSS
+ * JavaScript
+ * Foundation
+
+## Contributing
+
+1. [Fork it](https://help.github.com/articles/fork-a-repo)
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am "Added some feature"`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new [Pull Request](https://help.github.com/articles/using-pull-requests)
+
+## Bug Tracker
+
+Found a bug? Report it [here](https://github.com/openfaux/openfaux-website/issues/)!
+
+## Feature Request
+
+Have an idea? Add it [here](https://github.com/openfaux/openfaux-website/issues/)!
 
 ## FAQs
 
@@ -43,35 +78,11 @@ Article Citations:
 [ZDNet](http://www.zdnet.com/uk-us-able-to-crack-most-encryption-used-online-7000020309/) |
 [ZDNet](http://www.zdnet.com/has-the-nsa-broken-ssl-tls-aes-7000020312/)
 
-## Contributing
-
-1. [Fork it](https://help.github.com/articles/fork-a-repo)
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new [Pull Request](https://help.github.com/articles/using-pull-requests)
-
-## Bug Tracker
-
-Found a bug? Report it [here](https://github.com/openfaux/openfaux-website/issues/)!
-
-## Feature Request
-
-Have an idea? Add it [here](https://github.com/openfaux/openfaux-website/issues/)!
-
 ## Contact
 
 Twitter: `@OpenFaux`
 
 Email: `nbernard[at]openfaux.org`
-
-IRC: `irc.openfaux.org:6667` `#Dev`
-
-## Donate
-
-[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Z4AVXDZFM7UVJ)
-
-[![Donate](https://coinbase.com/assets/buttons/donation_large-6ec72b1a9eec516944e50a22aca7db35.png)](https://coinbase.com/checkouts/80472bb3186294caaebb842125d94ce4)
 
 ## License
 
